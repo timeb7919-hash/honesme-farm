@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HONESME FARM - Isoko ry'amatungo, ibiryo by'amatungo n'ibikomoka ku buhinzi.">
+  <title>HONESME FARM | Isoko ry'ubuhinzi n'ubworozi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">🌱</span><span>HONESME <b>FARM</b></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Fungura menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home" data-i18n="navHome">Ahabanza</a>
+      <a href="#market" data-i18n="navMarket">Isoko</a>
+      <a href="#advisors" data-i18n="navAdvisors">Abajyanama</a>
+      <a href="dashboard.html" data-i18n="navDashboard">Konti y'umucuruzi</a>
+      <select id="languageSelect" aria-label="Hitamo ururimi">
+        <option value="rw">Kinyarwanda</option><option value="en">English</option><option value="sw">Kiswahili</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow" data-i18n="heroEyebrow">Isoko rihuza abahinzi n'aborozi</span>
+        <h1 data-i18n="heroTitle">Ubuhinzi n'ubworozi, <em>intambwe ijya imbere.</em></h1>
+        <p data-i18n="heroText">Shaka amatungo, ibiryo byayo n'ibikomoka ku buhinzi. Menyana n'abacuruzi n'abajyanama mu buryo bworoshye.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#market" data-i18n="browseMarket">Reba isoko</a>
+          <a class="btn btn-outline" href="dashboard.html" data-i18n="sellHere">Shyira igicuruzwa ku isoko</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="field field-one"></div><div class="field field-two"></div><div class="farm-emoji">🐄 🌾 🐖</div></div>
+    </section>
+
+    <section class="section container" id="market">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-i18n="marketEyebrow">HONESME MARKET</span><h2 data-i18n="marketTitle">Shakira mu byiciro</h2></div>
+        <p data-i18n="marketIntro">Hitamo icyiciro ushaka kureba.</p>
+      </div>
+      <div class="categories">
+        <button class="category active" data-category="all"><span>🧺</span><b data-i18n="all">Byose</b></button>
+        <button class="category" data-category="amatungo"><span>🐄</span><b data-i18n="animals">Amatungo</b></button>
+        <button class="category" data-category="ibiryo"><span>🌽</span><b data-i18n="feed">Ibiryo by'amatungo</b></button>
+        <button class="category" data-category="imiti"><span>🩺</span><b data-i18n="vet">Imiti n'ubuvuzi</b></button>
+        <button class="category" data-category="umusaruro"><span>🥬</span><b data-i18n="produce">Umusaruro</b></button>
+        <button class="category" data-category="ibikoresho"><span>🚜</span><b data-i18n="equipment">Ibikoresho n'ifumbire</b></button>
+      </div>
+      <div class="section-heading product-heading"><h2 data-i18n="featured">Ibicuruzwa by'icyitegererezo</h2><span class="demo-note" data-i18n="demoNote">Urugero rwo kwerekana uko urubuga ruzakora</span></div>
+      <div class="products-grid" id="productsContainer"></div>
+    </section>
+
+    <section class="advisor-section" id="advisors">
+      <div class="container advisor-inner">
+        <div><span class="eyebrow" data-i18n="advisorEyebrow">UBUMENYI N'UBUFASHA</span><h2 data-i18n="advisorTitle">Kugira ngo ubworozi n'ubuhinzi bitere imbere</h2><p data-i18n="advisorText">HONESME FARM izafasha abakoresha kubona abajyanama n'inzobere mu buhinzi n'ubworozi.</p></div>
+        <div class="advisor-card"><div class="advisor-icon">👩🏽‍🌾</div><h3 data-i18n="advisorCardTitle">Abajyanama mu buhinzi n'ubworozi</h3><p data-i18n="advisorCardText">Iki gice kizashyirwamo amakuru y'abajyanama bemejwe.</p><span class="status">Biri gutegurwa</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand brand-footer" href="#home">🌱 HONESME <b>FARM</b></a><p>© <span id="year"></span> HONESME FARM. <span data-i18n="rights">Uburenganzira bwose burarinzwe.</span></p><p class="footer-small" data-i18n="footerNote">Uru ni urubuga rw'igerageza; ibicuruzwa bigaragara ni ingero.</p></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
